@@ -7,11 +7,14 @@ $(document).ready(function () {
   for (let i = 7; i < 18; i++) {
     if (curhour < i) {
       $("#" + i).addClass("future");
+    } else if (curhour > i) {
+      $("#" + i).addClass("past");
     }
   }
+
   //end of loop
 
-  function calenderstoreinputs() {
+  function calenderstorageinputs() {
     $(".event").each(function () {
       var inputId = $(this).attr("id");
       $(this).val(localStorage.getItem(inputId));
@@ -29,5 +32,5 @@ $(document).ready(function () {
     console.log($(this));
   });
 
-  calenderstoreinputs();
+  calenderstorageinputs();
 });
