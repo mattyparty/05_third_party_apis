@@ -27,10 +27,13 @@ $(document).ready(function () {
     var thisinputid = $(this).siblings(".event").attr("id");
     //setting local storage  - localstorage.setitem(key,Value)
     localStorage.setItem(thisinputid, scheduledata);
-    console.log(scheduledata);
-    console.log(thisinputid);
-    console.log($(this));
   });
+  //Function to display current day
+  function CurrentDay() {
+    CurrentDate = moment().format("LL");
+    $("#currentDay").text(CurrentDate);
+  }
 
   calenderstorageinputs();
+  CurrentDay();
 });
