@@ -25,4 +25,4 @@ Also wanted to say thank you for reading/grading. I imagine looking at all these
 
 # Screen Shot of Deployed index page
 
-![To Do Calender](./assets/Week5Assignment.png "Deployed Index Screen Shot")
+![To Do Calender](https://raw.githubusercontent.com/mattyparty/05_third_party_apis/main/Assets/Week5Assignment.png "Deployed Index Screen Shot")
